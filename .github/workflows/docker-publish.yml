@@ -16,8 +16,8 @@ jobs:
     - name: Log in to enessermaxhaj1992
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.GITHUB}}
-        password: ${{ secrets.github }}
+        username: ${{ secrets.enessermaxhajj1992}}
+        password: ${{ secrets.ENESSERMAXHAJJ1992 }}
 
     - name: Build Docker image
       run: |
