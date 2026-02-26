@@ -13,12 +13,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Log in to docker hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.enessermaxhaj1992}}
-        password: ${{ secrets.PASSWORD}}
-
+    - docker login -u enessermaxhaj1992 -p ${{secrets.DOCKER_HUB_TOKEN}}
     - name: Build Docker image
       run: |
         docker build -t enessermaxhaj1992/my-app:latest .
